@@ -16,3 +16,4 @@
 3. Lời kết
    1. Mình vẫn còn đang tiếp tục hoàn thiện.
    2. Code chạy được chức năng chính rồi, đang làm nốt những đoạn còn lại.
+   3. Code có thể chạy được với crontab
