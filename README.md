@@ -11,7 +11,8 @@
 1. [Dữ liệu của người được chúc sinh nhật](https://docs.google.com/spreadsheets/d/1gINjp6tlqbd2XN2jgWjlQ-qKTKo3K8LIDJHjwIkpX1I/edit?usp=sharing)
 2. Kết quả người nhận mail
 
-![Kết quả nhận thư](img_readme\email.JPG)
+![Kết quả nhận thư](./img_readme/email.JPG)
+
 3. Lời kết
    1. Mình vẫn còn đang tiếp tục hoàn thiện.
    2. Code chạy được chức năng chính rồi, đang làm nốt những đoạn còn lại.
