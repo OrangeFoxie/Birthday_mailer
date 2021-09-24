@@ -33,21 +33,23 @@ def getDate():
 # Mail data
 def mailData(sender_email,receiver_email,today):
     message = MIMEMultipart("alternative")
-    message["Subject"] = "Mail tự động BlueFin"
+    message["Subject"] = "CHÚC MỪNG SINH NHẬT"
     message["From"] = sender_email
     message["To"] = ", ".join(receiver_email)
     text = """\
         Chào bạn!
         Mail này được gửi tự động đến bạn.
         Hôm nay là {TODAY}
+        CHÚC BẠN MỘT NGÀY SINH NHẬT VUI VẺ
         """
     html = """\
     <html>
     <body>
         <p>Chào bạn!<br>
-        Mail này được gửi tự động đến bạn.<br>
-        <a href="http://www.realpython.com">Học python, </a> 
+        Mail này được gửi tự động đến bạn.<br>        
         Hôm nay là {TODAY}.
+        CHÚC BẠN MỘT NGÀY SINH NHẬT VUI VẺ
+        <a href="https://github.com/OrangeFoxie/Birthday_mailer.git">Gấu mèo</a> 
         </p>
     </body>
     </html>
