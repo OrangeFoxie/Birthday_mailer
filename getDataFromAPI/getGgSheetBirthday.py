@@ -1,11 +1,12 @@
 from __future__ import print_function
-import re,sys
-# sys.path.append(r'.\config')
-# from configMailer import googleSetup
+import sys
+sys.path.append(r'.\CustomConfig')
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
+# from configMailer import googleSetup
 
-# ggSetup = googleSetup()
+# ggSetup = configMailer.googleSetup
+# print(googleSetup)
 
 SERVICE_ACCOUNT_FILE = '.\keyAPI\getUserBirthday\service.json'
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']

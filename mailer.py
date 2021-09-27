@@ -2,7 +2,7 @@ import smtplib, ssl
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import date
-from config import configMailer 
+from CustomConfig import configMailer 
 
 def infoMailer():   
     configmailer = configMailer.mailSetup()

@@ -1,7 +1,6 @@
 import sys, getpass
 sys.path.append(r'.\StoreData')
 from storeBirthday import getUserEmailList
-# from storeBirthday import getUserEmailList
 
 usrEmail = getUserEmailList()
 
@@ -25,8 +24,8 @@ def googleSetup():
     sample_spreadsheet_id = '1gINjp6tlqbd2XN2jgWjlQ-qKTKo3K8LIDJHjwIkpX1I'
     sample_range_name = 'BirthDay!A2:D'
     return {
-        'SERVICE_ACCOUNT_FILE':service_account_file,
-        'SCOPES':scope,
-        'SAMPLE_SPREADSHEET_ID':sample_spreadsheet_id,
-        'SAMPLE_RANGE_NAME':sample_range_name
+        'service_account_file':service_account_file,
+        'scope':scope,
+        'sample_spreadsheet_id':sample_spreadsheet_id,
+        'sample_range_name':sample_range_name
     }
