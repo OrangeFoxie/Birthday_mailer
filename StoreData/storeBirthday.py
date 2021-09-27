@@ -1,5 +1,5 @@
 import sys
-sys.path.append('E:\Data\Git\Auto_Mailer\getDataFromAPI')
+sys.path.append(r'.\getDataFromAPI')
 from getGgSheetBirthday import Values
 from datetime import datetime, date
 

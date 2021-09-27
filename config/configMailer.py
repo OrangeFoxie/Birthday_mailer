@@ -1,5 +1,5 @@
 import sys, getpass
-sys.path.append('E:\Data\Git\Auto_Mailer\StoreData')
+sys.path.append(r'.\StoreData')
 from storeBirthday import getUserEmailList
 # from storeBirthday import getUserEmailList
 
