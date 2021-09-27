@@ -1,15 +1,14 @@
 from __future__ import print_function
 import sys
 sys.path.append(r'.\CustomConfig')
+from accountConfig import googleSetup
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
-# from configMailer import googleSetup
 
-# ggSetup = configMailer.googleSetup
-# print(googleSetup)
+gg = googleSetup() 
 
-SERVICE_ACCOUNT_FILE = '.\keyAPI\getUserBirthday\service.json'
-SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
+SERVICE_ACCOUNT_FILE = gg['service_account_file']
+SCOPES = gg['scopes']
 
 creds = None
 creds = service_account.Credentials.from_service_account_file(
@@ -17,8 +16,8 @@ creds = service_account.Credentials.from_service_account_file(
 
 
 # The ID and range of a sample spreadsheet.
-SAMPLE_SPREADSHEET_ID = '1gINjp6tlqbd2XN2jgWjlQ-qKTKo3K8LIDJHjwIkpX1I'
-SAMPLE_RANGE_NAME = 'BirthDay!A2:D'
+SAMPLE_SPREADSHEET_ID = gg['sample_spreadsheet_id']
+SAMPLE_RANGE_NAME = gg['sample_range_name']
 
 def Values():
     service = build('sheets', 'v4', credentials=creds)
