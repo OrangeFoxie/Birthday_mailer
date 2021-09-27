@@ -7,7 +7,7 @@ usrEmail = getUserEmailList()
 def mailSetup():
     port = 465  # For starttls
     smtp_server = 'smtp.gmail.com'
-    sender_email = 'vinhphuc931998@gmail.com'
+    sender_email = 'vinhphuc9398@gmail.com'
     receiver_email = usrEmail
     password = getpass.getpass("Type your email password to send: ")
     return {

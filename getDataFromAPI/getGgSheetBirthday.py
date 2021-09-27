@@ -35,6 +35,3 @@ def Values():
         for row in values:
             arr.append([row[0],row[1],row[2], row[3]])
         return(arr)
-
-# if __name__ == '__main__':
-#     main()
