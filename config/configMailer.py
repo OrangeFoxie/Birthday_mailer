@@ -2,7 +2,7 @@ import sys, getpass
 sys.path.insert(0, 'E:\Data\Git\Auto_Mailer\StoreData')
 from storeBirthday import getUserEmailList
 
-usrEmail = getUserEmailList()
+usrEmail = getUserEmailList
 
 def mailSetup():
     port = 465  # For starttls
