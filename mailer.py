@@ -3,6 +3,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import date
 from CustomConfig import configMailer 
+from MailText import mailText, mailHTML
 
 def infoMailer():   
     configmailer = configMailer.mailSetup()
@@ -36,24 +37,13 @@ def mailData(sender_email,receiver_email,today):
     message["Subject"] = "CHÚC MỪNG SINH NHẬT"
     message["From"] = sender_email
     message["To"] = ", ".join(receiver_email)
-    text = """\
-        Chào bạn!
-        Mail này được gửi tự động đến bạn.
-        Hôm nay là {TODAY}
-        CHÚC BẠN MỘT NGÀY SINH NHẬT VUI VẺ
-        """
-    html = """\
-    <html>
-    <body>
-        <p>Chào bạn!<br>
-        Mail này được gửi tự động đến bạn.<br>        
-        Hôm nay là {TODAY}.
-        CHÚC BẠN MỘT NGÀY SINH NHẬT VUI VẺ
-        <a href="https://github.com/OrangeFoxie/Birthday_mailer.git">Gấu mèo</a> 
-        </p>
-    </body>
-    </html>
-    """
+
+    mailtext = mailText.mailtext()
+    mailhtml = mailHTML.mailhtml()
+
+    text = mailtext
+    html = mailhtml
+    
     new_html = html.format(TODAY=today)
     new_text = text.format(TODAY=today)
 
