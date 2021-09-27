@@ -17,4 +17,3 @@ def mailSetup():
         'receiver_email':receiver_email, 
         'password':password
     }
-
