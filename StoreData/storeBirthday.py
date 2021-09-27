@@ -11,13 +11,13 @@ def extractDate():
         arr2.append([
                 arr1[s][0],
                 arr1[s][1],
-                datetime.strptime(arr1[s][2], '%d/%m/%Y').date().strftime("%d-%m-%G"),
+                datetime.strptime(arr1[s][2], '%d/%m/%Y').date().strftime("%d-%m"),
                 arr1[s][3]])
     return arr2
 
 def getToday():
     getDate = date.today()
-    today = getDate.strftime("%d-%m-%G")
+    today = getDate.strftime("%d-%m")
     return today
 
 
@@ -38,7 +38,6 @@ def getUserNameList():
 
     for s in range(len(userList)):
         userNameList.append(userList[s][1])
-
     return userNameList
 
 
@@ -48,7 +47,6 @@ def getUserEmailList():
 
     for s in range(len(userList)):
         userEmailList.append(userList[s][3])
-
     return userEmailList
 
-# print(getUserEmailList())
+print(getUserList())
