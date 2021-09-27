@@ -1,6 +1,6 @@
 from __future__ import print_function
 import re,sys
-sys.path.insert(0, './config')
+sys.path.insert(0, 'E:\Data\Git\Auto_Mailer\config')
 from configMailer import googleSetup
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
