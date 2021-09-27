@@ -1,11 +1,10 @@
 import sys
 sys.path.insert(0, '.\getDataFromAPI')
-from getGgSheetBirthday import values
-from datetime import datetime
-from datetime import date
+from getGgSheetBirthday import Values
+from datetime import datetime, date
 
 def extractDate():
-    arr1 = values()
+    arr1 = Values()
     arr2 = []
     for s in range(len(arr1)):
         arr2.append([
@@ -49,4 +48,5 @@ def getUserEmailList():
         userEmailList.append(userList[s][3])
     return userEmailList
 
-# print(getUserList())
+
+print(getUserList())
