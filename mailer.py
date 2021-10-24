@@ -76,7 +76,7 @@ def main():
     ifm = infoMailer()
     today = getDate()
     message = mailData(ifm['sender_email'],ifm['receiver_email'],today['today'])
-    
+
     mailData(
             ifm['sender_email'],
             ifm['receiver_email'],
